@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="css/styles.css" />
+    
     <title>Auth page</title>
+    <link rel="stylesheet" href="css/styles.css" > 
 </head>
 
 <body>
     <main>
-        <div id="loginForm">
-            <form method="post">
+        <div id="login-form">
+            <form method="post" class="auth-form">
                 <label for="login-username">Login:</label>
                 <input name="submitted-login" id="login-username" />
 
@@ -24,8 +25,8 @@
             </form>
         </div>
 
-        <div id="registerForm" class="hidden">
-            <form method="post">
+        <div id="register-form" class="hidden">
+            <form method="post" class="auth-form">
                 <label for="register-username">Login:</label>
                 <input name="submitted-login" id="register-username" />
 
