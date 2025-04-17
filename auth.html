@@ -19,31 +19,31 @@
         <div id="login-form">
             <form method="post" class="auth-form">
                 <label for="login-username">Login:</label>
-                <input name="submitted-login" id="login-username" />
+                <input name="submitted-login" id="login-username" type="text" required/>
 
                 <label for="login-pass">Password:</label>
-                <input name="submitted-pass" id="login-pass" type="password" />
+                <input name="submitted-pass" id="login-pass" type="password" required/>
 
                 <button type="submit">Log In</button>
 
-                <p>Don't have an account? <a href="#" id="toogle-register">Sign Up</a></p>
+                <p>Don't have an account? <a href="#" id="toggle-register">Sign Up</a></p>
             </form>
         </div>
 
         <div id="register-form" class="hidden">
             <form method="post" class="auth-form">
                 <label for="register-username">Login:</label>
-                <input name="submitted-login" id="register-username" />
+                <input name="submitted-login" id="register-username" type="text" required/>
 
                 <label for="register-pass">Password:</label>
-                <input name="submitted-pass" id="register-pass" type="password" />
+                <input name="submitted-pass" id="register-pass" type="password" required/>
 
                 <label for="register-repeat-pass">Repeat password:</label>
-                <input name="repeated-pass" id="register-repeat-pass" type="password" />
+                <input name="repeated-pass" id="register-repeat-pass" type="password" required/>
 
                 <button type="submit">Sign Up</button>
 
-                <p>Already have an account? <a href="#" id="toogle-login">Log in</a></p>
+                <p>Already have an account? <a href="#" id="toggle-login">Log in</a></p>
             </form>
         </div>
     </main>
