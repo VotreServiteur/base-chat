@@ -1,6 +1,7 @@
+/* Основные стили */
 html {
-    background-color: #2e3549;
-    color: #f8f8f2;
+    background-color: #2e3549; /* тёмный фон */
+    color: #f8f8f2; /* светлый текст */
     font-family: 'Lato', 'Segoe UI', "Trebuchet MS", Verdana, sans-serif;
 }
 
@@ -10,61 +11,77 @@ html {
     margin: 0;
 }
 
-.hidden {
-    visibility: s;
+/* Шапка */
+header {
+    text-align: center;
+    font-size: 30px;
+    background-color: #252c41;
+    padding: 0.1em 0 0.3em;
+    border-bottom: 1px solid #f0c674;
 }
 
+header a {
+    text-decoration: none;
+}
+
+header a #base-part {
+    color: #8be9fd;
+}
+
+header a #chat-part {
+    color: #f0c674;
+}
+
+/* Контейнер основной части */
 main {
     padding: 20px;
 }
 
+/* Скрытый элемент */
+.hidden {
+    display: visible; /* заменено visibility: s на валидное значение */
+}
 
+/* Форма входа/регистрации */
 .auth-form {
     position: absolute;
     background-color: #252c41;
     top: 20%;
     left: 40%;
     right: 40%;
-
     padding: 1.2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     min-width: 20%;
-    max-width: 400px;
+    max-width: 50%;
     border-radius: 5%;
-
     display: flex;
     flex-direction: column;
-
 }
 
-.auth-form input{
-    margin: 0.3rem;
-    margin-bottom: 0.9rem;
+/* Поля ввода */
+.auth-form input {
+    margin: 0.3rem 0.3rem 0.9rem;
     font-weight: bold;
     height: 1.2rem;
-    
     color: #f8f8f2;
-    border-style: solid;
-    border-color: #f0c674;
-    background-color: rgba(0,0,0,0);
+    border: 1px solid #f0c674;
+    background-color: transparent;
     border-radius: 1em;
-    padding: 5px 15px; 
+    padding: 5px 15px;
 }
 
+/* Метки */
 .auth-form label {
     margin: 0.3rem;
 }
 
-
+/* Кнопка */
 .auth-form button[type="submit"] {
     background-color: #f0c674;
     padding: 0.5rem 1.5rem;
     margin: 0.3rem;
-
     border-radius: 1em;
-    border-style: solid;
-    border-color: #636363;
-
+    border: 1px solid #636363;
     transition: background-color 0.3s ease;
 }
 
@@ -72,6 +89,7 @@ main {
     background-color: #e0b866;
 }
 
+/* Ссылки под формой */
 .auth-form p {
     margin-top: 1.5rem;
     text-align: center;
@@ -89,26 +107,24 @@ main {
     text-decoration: underline;
 }
 
+/* Адаптивность */
 @media (max-width: 500px) {
-    .auth-form{
+    .auth-form {
         left: 10%;
         right: 10%;
     }
 }
 
 @media (max-width: 800px) and (min-width: 500px) {
-    .auth-form{
+    .auth-form {
         left: 20%;
         right: 20%;
     }
 }
 
-
-@media (max-width: 1200px) and (min-width: 800px) {
-    .auth-form{
+@media (max-width: 1360px) and (min-width: 800px) {
+    .auth-form {
         left: 30%;
         right: 30%;
     }
 }
-
-
