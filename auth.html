@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Auth page</title>
+</head>
+
+<body>
+    <main>
+        <div id="loginForm">
+            <form method="post">
+                <label for="login-username">Login:</label>
+                <input name="submitted-login" id="login-username" />
+
+                <label for="login-pass">Password:</label>
+                <input name="submitted-pass" id="login-pass" type="password" />
+
+                <button type="submit">Log In</button>
+
+                <p>Don't have an account? <a href="#" id="toogle-register">Sign Up</a></p>
+            </form>
+        </div>
+
+        <div id="registerForm" class="hidden">
+            <form method="post">
+                <label for="register-username">Login:</label>
+                <input name="submitted-login" id="register-username" />
+
+                <label for="register-pass">Password:</label>
+                <input name="submitted-pass" id="register-pass" type="password" />
+
+                <label for="register-repeat-pass">Repeat password:</label>
+                <input name="repeated-pass" id="register-repeat-pass" type="password" />
+
+                <button type="submit">Sign Up</button>
+
+                <p>Already have an account? <a href="#" id="toogle-login">Log in</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="/js/auth.js"></script>
+</body>
+
+</html>
